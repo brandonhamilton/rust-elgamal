@@ -1,0 +1,8 @@
+[package]
+name = "elgamal"
+version = "0.1.0"
+authors = [ "brandon.hamilton@gmail.com" ]
+
+[[lib]]
+name = "elgamal"
+path = "src/elgamal/lib.rs"
