@@ -25,12 +25,12 @@ fn generate_keys(bit_size: uint) -> (PublicKey, PrivateKey)
     fn encrypt_string(&self, m: &str) -> String
     ```
 
-    * ** verify** - Verify signature
+    * **verify** - Verify signature
     ```rust
     fn verify(&self, r: &BigUint, s: &BigUint, m: &BigUint) -> bool
     ```
 
-    * ** verify_string** - Verify signature for a string
+    * **verify_string** - Verify signature for a string
     ```rust
     fn verify_string(&self, sig: &str, m: &str) -> bool
     ```
@@ -47,12 +47,12 @@ fn generate_keys(bit_size: uint) -> (PublicKey, PrivateKey)
     fn decrypt_string(&self, m: &str) -> String
     ```
 
-  * ** sign** - Signature generation
+  * **sign** - Signature generation
     ```rust
     fn sign(&self, m: &BigUint) -> (BigUint, BigUint)
     ```
 
-  * ** sign_string** - Sign a string
+  * **sign_string** - Sign a string
     ```rust
     fn sign_string(&self, sig: &str, m: &str) -> bool
     ```
@@ -82,9 +82,11 @@ fn main() {
 # Building the library
 
 - Compile library:
-
-    cargo build
+   ```
+   cargo build
+   ```
 
 - Run tests:
-
-    cargo test
+   ```
+   cargo test
+   ```
