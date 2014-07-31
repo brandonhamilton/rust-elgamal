@@ -69,7 +69,7 @@ fn main() {
 
     let plaintext = "Secret";
 
-    let ciphertext = public_key.encrypt_string("Secret");
+    let ciphertext = public_key.encrypt_string(plaintext);
     let signature = private_key.sign_string(ciphertext.as_slice());
 
     let decrytped_plaintext = private_key.decrypt_string(ciphertext.as_slice());
